@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 10;
+    background-color: white;
+}
+
+header #logo {
+    display: flex;
+    width: 50%
+}
+
+header #logo h2 {
+    font-weight: 600;
+    color: darkgray;
+}
+
+header #logo h2 span {
+    font-weight: 400;
+    color: lightgray;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav li {
+    margin: 0 24px;
+}
