@@ -2,6 +2,8 @@ html, body {
     margin: 0;
 }
 
+/* Header Section */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -44,4 +46,198 @@ header nav ul {
 
 header nav li {
     margin: 0 24px;
+}
+
+/* Main Body */
+
+main {
+    position: relative;
+    top: 70px;
+    background-color: lightgray;
+}
+
+/* Banner One */
+
+main #banner-one {
+    display: flex;
+    flex-direction: row;
+}
+
+main #banner-one-left {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+main #banner-one-left img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+main #banner-one-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #banner-two {
+    display: flex;
+    flex-direction: row;
+}
+
+main #banner-two-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 32px 24px;
+}
+
+main #banner-two-left img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+main #banner-two-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
+}
+
+main #banner-two-right .mini-banner {
+    display: flex;
+    flex-direction: row;
+}
+
+main #banner-two-right .mini-banner .mini-banner-left {
+    width: 35%;
+}
+
+main #banner-two-right .mini-banner .mini-banner-left img {
+    max-width: 100%;
+}
+
+main #banner-two-right .mini-banner .mini-banner-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.mini-banner-right h3, p, a {
+    margin: 6px;
+}
+
+/* Start Learning */
+
+main #start-learning {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 56px;
+}
+
+main #start-learning #start-learning-header {
+    text-align: center;
+    margin: 32px 0;
+}
+
+main #start-learning #start-learning-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main #start-learning .start-learning-card {
+    width: 30%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #start-learning .start-learning-card img {
+    width: 100%;
+    margin: 0;
+}
+
+main #start-learning .start-learning-card .card-info {
+    background-color: white;
+    margin: 0;
+}
+
+/* Thesis Exhibit */
+
+main #thesis-exhibit {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #thesis-exhibit #thesis-exhibit-header {
+    margin: 32px 0;
+    text-align: center;
+}
+
+main #thesis-exhibit #thesis-exhibit-body {
+    display: flex;
+    flex-direction: row;
+}
+
+main #thesis-exhibit #thesis-exhibit-left {
+    width: 60%;
+}
+
+main #thesis-exhibit #thesis-exhibit-left video {
+    width: 100%;
+    display: block;
+}
+
+main #thesis-exhibit #thesis-exhibit-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 24px;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card {
+    display: flex;
+    flex-direction: row;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card .card-image {
+    width: 35%;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 70px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#footer-left {
+    margin-left: 10px;
+}
+
+#footer-right {
+    display: flex;
+    margin: 0;
+}
+
+#footer-right ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
