@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Header Section */
@@ -22,12 +23,13 @@ header #logo {
 
 header #logo h2 {
     font-weight: 600;
-    color: darkgray;
+    color: black;
+    opacity: 0.9;
 }
 
 header #logo h2 span {
     font-weight: 400;
-    color: lightgray;
+    color: gray;
 }
 
 header nav {
@@ -52,7 +54,7 @@ header nav li {
 
 main {
     position: relative;
-    top: 70px;
+    top: 64px;
     background-color: lightgray;
 }
 
@@ -77,18 +79,45 @@ main #banner-one-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+main #banner-one-right h2 {
+    font-size: 2.5rem;
+    color: black;
+    opacity: 0.8;
+    margin: 0;
+}
+
+main #banner-one-right h4 {
+    font-size: 1.2rem;
+    color: black;
+    opacity: 0.65;
+    text-align: left;
+    width: 60%;
+    left: 0;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+main #banner-one-right button {
+    background-color: black;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: white;
+    padding: 15px 155px;
 }
 
 main #banner-two {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 main #banner-two-left {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     margin: 32px 24px;
 }
 
@@ -107,6 +136,7 @@ main #banner-two-right {
 main #banner-two-right .mini-banner {
     display: flex;
     flex-direction: row;
+    margin: 0 0 16px 0;
 }
 
 main #banner-two-right .mini-banner .mini-banner-left {
@@ -140,6 +170,9 @@ main #start-learning {
 main #start-learning #start-learning-header {
     text-align: center;
     margin: 32px 0;
+    font-size: 1.9rem;
+    color: black;
+    opacity: 0.9;
 }
 
 main #start-learning #start-learning-cards {
@@ -155,32 +188,61 @@ main #start-learning .start-learning-card {
     flex-direction: column;
 }
 
+main #start-learning .start-learning-card .card-image {
+    margin: 0;
+}
+
 main #start-learning .start-learning-card img {
     width: 100%;
+    height: auto;
     margin: 0;
 }
 
 main #start-learning .start-learning-card .card-info {
     background-color: white;
-    margin: 0;
+    margin: -5px 0 0 0;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #start-learning .start-learning-card .card-info h3 {
+    font-size: 1.1em;
+    margin: 15px 16px;
+}
+
+main #start-learning .start-learning-card .card-info p {
+    margin: 10px 16px;
+    color: gray;
+    max-width: 100%;
+    overflow: scroll;
 }
 
 /* Thesis Exhibit */
 
 main #thesis-exhibit {
-    margin: 24px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: white;
+
 }
 
 main #thesis-exhibit #thesis-exhibit-header {
-    margin: 32px 0;
+    margin: 32px;
     text-align: center;
+    font-size: 1.9rem;
+    color: black;
+    opacity: 0.9;
 }
 
 main #thesis-exhibit #thesis-exhibit-body {
     display: flex;
     flex-direction: row;
+    margin: 0 24px;
 }
 
 main #thesis-exhibit #thesis-exhibit-left {
@@ -196,7 +258,7 @@ main #thesis-exhibit #thesis-exhibit-right {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 24px;
+    margin: 0 24px;
 }
 
 main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card {
@@ -211,6 +273,23 @@ main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card .card-image {
 main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card img {
     width: 100%;
     height: auto;
+    margin: 16px;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card .card-info {
+    width: 65%;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card .card-info h3 {
+    margin: 5px 16px;
+}
+
+main #thesis-exhibit #thesis-exhibit-right .thesis-exhibit-card .card-info p {
+    margin: 5px 16px;
 }
 
 /* Footer */
